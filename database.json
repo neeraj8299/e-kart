@@ -1,0 +1,47 @@
+{
+    "dev": {
+        "host": {
+            "ENV": "DB_HOST"
+        },
+        "user": {
+            "ENV": "DB_USERNAME"
+        },
+        "password": {
+            "ENV": "DB_PASSWORD"
+        },
+        "database": {
+            "ENV": "DB_DATABASE"
+        },
+        "port": {
+            "ENV": "DB_PORT"
+        },
+        "multipleStatements": true
+    },
+    "test": {
+        "driver": "sqlite3",
+        "filename": ":memory:"
+    },
+    "prod": {
+        "host": "127.0.01",
+        "user": "root",
+        "password": "hrhk",
+        "database": "e_cart",
+        "port": "3306"
+    },
+    "pg": {
+        "driver": "pg",
+        "user": "test",
+        "password": "test",
+        "host": "localhost",
+        "database": "mydb",
+        "port": "20144",
+        "ssl": "true",
+        "schema": "my_schema"
+    },
+    "mongo": {
+        "driver": "mongodb",
+        "database": "my_db",
+        "host": "localhost"
+    },
+    "other": "postgres://uname:pw@server.com/dbname"
+}
